@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroplanes</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <section class="flex-container">
+        <header class="flex-item header"></header>
+        <aside class="flex-item sidebar"> </aside>
+        <main class="flex-item main">
+            <form id="new-airplane-form">
+                <div id="form-wrapper">
+                    <h1>Add Airplane</h1>
+
+                    <div class="form-item">
+                        <div>
+                        <input type="radio" id="military" name="type" value="Military">
+                        <label for="military">Military</label>
+                        </div>
+
+                        <div>
+                        <input type="radio" id="civilian" name="type" value="Civilian">
+                        <label for="civilian">Civilian</label>
+                        </div>
+
+                        <!-- <label for="type" class="primary">Type of Airplane: </label>
+                        <select id="type">
+                          <option value="" disabled selected></option>
+                          <option value="Military">Military</option>
+                          <option value="Civilian">Civilian</option>
+                        </select> -->
+
+                        <label for="title" class="primary">Name: </label>
+                        <input type="text" id="name" required/>
+
+                        <label for="title" class="primary">Engines: </label>
+                        <select id="engines">
+                            <option value="" disabled selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                        </select>
+
+                        <label for="title" class="primary">Max Distance: </label>
+                        <input type="text" id="distance" required/>
+
+                        <label for="title" class="primary">Max Altitude: </label>
+                        <input type="text" id="altitude" required/>
+                    </div>
+                </div>
+                <button type="submit" value="save"> Save </button>
+                <button type="button" id="delete-all"> Delete All </button>
+            </form>
+            <br>
+            <h1>🛩 Airplane List:</h1>
+            <table id="airplane-list">
+                <tr>
+                    <th>Type</th><th>Name</th><th>Engines</th><th>Distance</th><th>Altitude</th>
+                </tr>
+                <tr>
+                    <td>Civilian</td><td>Boeing 747</td><td>4</td><td>12150 km</td><td>30000 ft</td>
+                </tr>
+            </table>
+        </main>
+        <aside class="flex-item sidebar"> </aside>
+      </section>
+</body>
+</html>

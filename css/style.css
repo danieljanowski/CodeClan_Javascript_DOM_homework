@@ -1,0 +1,85 @@
+h1 {text-align: center;}
+
+body{
+        background-image: url('background.jpg');
+        background-repeat: repeat;
+        background-size: 100%;
+        background-color: black;
+        color: white;
+    }
+
+table, th, tr {text-align: center;
+                border: 1px solid white;}
+
+table {width: 100%;}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    }
+
+.header {
+height: 30px;
+flex: 1 100%;
+text-align: left;
+}
+
+.sidebar {
+flex: 1;
+}
+
+.main {
+flex: 15;
+}
+
+.flex-item {
+padding: 10px;
+width: 100px;
+border: 1px none black;
+color: white;
+font-weight: normal;
+font-size: 1.5em;
+text-align: left;
+font-family: 'Hind', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    }
+
+button:hover {
+        background-color: white;
+        color: black;
+    }
+
+input[type=text] {
+    width: 5%;
+    height: 30px;
+    padding: 0px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    }
+
+select {
+    position: relative;
+    font-family: Arial;
+    height: 30px;
+    width: 5%;
+    }
